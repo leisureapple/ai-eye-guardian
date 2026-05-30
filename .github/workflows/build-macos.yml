@@ -1,4 +1,4 @@
-name: Build macOS App
+name: Build AI Eye Guardian
 
 on:
   push:
@@ -22,5 +22,5 @@ jobs:
       - name: Upload app zip
         uses: actions/upload-artifact@v4
         with:
-          name: LittleAntRunner-macOS
-          path: 03_outputs/LittleAntRunner-macOS.zip
+          name: AIEyeGuardian-macOS
+          path: 03_outputs/AIEyeGuardian-macOS.zip

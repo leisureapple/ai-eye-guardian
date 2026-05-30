@@ -3,8 +3,8 @@ set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 OUTPUT_DIR="$ROOT_DIR/03_outputs"
-APP_DIR="$OUTPUT_DIR/Little Ant Runner.app"
-ZIP_PATH="$OUTPUT_DIR/LittleAntRunner-macOS.zip"
+APP_DIR="$OUTPUT_DIR/AI Eye Guardian.app"
+ZIP_PATH="$OUTPUT_DIR/AIEyeGuardian-macOS.zip"
 
 if [ ! -d "$APP_DIR" ]; then
   "$ROOT_DIR/04_scripts/build_app.sh" >/dev/null

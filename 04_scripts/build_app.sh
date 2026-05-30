@@ -4,7 +4,7 @@ set -euo pipefail
 ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 BUILD_DIR="$ROOT_DIR/02_working/build"
 OUTPUT_DIR="$ROOT_DIR/03_outputs"
-APP_NAME="Little Ant Runner"
+APP_NAME="AI Eye Guardian"
 APP_DIR="$OUTPUT_DIR/$APP_NAME.app"
 EXECUTABLE_DIR="$APP_DIR/Contents/MacOS"
 RESOURCE_DIR="$APP_DIR/Contents/Resources"
@@ -33,11 +33,11 @@ cat > "$APP_DIR/Contents/Info.plist" <<'PLIST'
   <key>CFBundleExecutable</key>
   <string>LittleAntRunner</string>
   <key>CFBundleIdentifier</key>
-  <string>com.local.littleantrunner</string>
+  <string>com.local.aieyeguardian</string>
   <key>CFBundleInfoDictionaryVersion</key>
   <string>6.0</string>
   <key>CFBundleName</key>
-  <string>Little Ant Runner</string>
+  <string>AI Eye Guardian</string>
   <key>CFBundlePackageType</key>
   <string>APPL</string>
   <key>CFBundleShortVersionString</key>

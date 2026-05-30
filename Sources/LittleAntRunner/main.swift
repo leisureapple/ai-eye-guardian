@@ -811,7 +811,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     private let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
     private let antController = AntController()
     private let menu = NSMenu()
-    private lazy var pauseItem = NSMenuItem(title: "暂停小蚂蚁", action: #selector(togglePause), keyEquivalent: "p")
+    private lazy var pauseItem = NSMenuItem(title: "暂停护眼动画", action: #selector(togglePause), keyEquivalent: "p")
     private lazy var slowItem = NSMenuItem(title: "慢速散步", action: #selector(setSlow), keyEquivalent: "")
     private lazy var normalItem = NSMenuItem(title: "正常奔跑", action: #selector(setNormal), keyEquivalent: "")
     private lazy var fastItem = NSMenuItem(title: "加速乱窜", action: #selector(setFast), keyEquivalent: "")
@@ -825,12 +825,12 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 
     private func configureStatusItem() {
         guard let button = statusItem.button else { return }
-        button.title = "蚂蚁"
-        button.toolTip = "桌面小蚂蚁"
+        button.title = "护眼鸡"
+        button.toolTip = "AI Eye Guardian"
     }
 
     private func configureMenu() {
-        menu.addItem(NSMenuItem(title: "让小蚂蚁回到最前面", action: #selector(bringToFront), keyEquivalent: "f"))
+        menu.addItem(NSMenuItem(title: "让护眼动画回到最前面", action: #selector(bringToFront), keyEquivalent: "f"))
         menu.addItem(pauseItem)
         menu.addItem(NSMenuItem.separator())
         menu.addItem(slowItem)
@@ -848,7 +848,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 
     @objc private func togglePause() {
         let paused = antController.togglePause()
-        pauseItem.title = paused ? "继续小蚂蚁" : "暂停小蚂蚁"
+        pauseItem.title = paused ? "继续护眼动画" : "暂停护眼动画"
     }
 
     @objc private func setSlow() {
