@@ -1,0 +1,9 @@
+.DS_Store
+02_working/
+03_outputs/
+01_inputs/
+*.log
+*.zip
+*.mp4
+*.mov
+*.m4v

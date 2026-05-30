@@ -1,0 +1,26 @@
+name: Build macOS App
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Build app
+        run: ./04_scripts/build_app.sh
+
+      - name: Package app
+        run: ./04_scripts/package_app.sh
+
+      - name: Upload app zip
+        uses: actions/upload-artifact@v4
+        with:
+          name: LittleAntRunner-macOS
+          path: 03_outputs/LittleAntRunner-macOS.zip
