@@ -1,10 +1,22 @@
 # AI Eye Guardian
 
+![AI Eye Guardian demo](docs/demo.gif)
+
 AI Eye Guardian is a playful macOS eye-break companion for people who spend long hours in front of a computer, especially AI builders, developers, designers, writers, analysts, and other screen-heavy workers.
 
 Instead of another silent timer that is easy to ignore, it places a moving visual target on your desktop: a vivid green ant crawls around, while a colorful rooster chases it. The tiny chase scene gives your eyes something to follow, helping you break the habit of staring at one fixed point for too long.
 
 > This is not medical software and does not diagnose, treat, or cure eye conditions. It is a lightweight desktop reminder that encourages eye movement and short visual breaks during long work sessions.
+
+## Download
+
+Download the latest macOS build from [GitHub Releases](https://github.com/leisureapple/ai-eye-guardian/releases).
+
+After downloading:
+
+1. Unzip `AIEyeGuardian-macOS.zip`.
+2. Right-click `AI Eye Guardian.app`.
+3. Choose `Open` the first time macOS asks for confirmation.
 
 ## Why It Exists
 
@@ -119,6 +131,16 @@ This script requires `ffmpeg`.
 ## Notes for Downloaded Apps
 
 This is a locally built, unsigned macOS app. If someone downloads the zip from GitHub, macOS Gatekeeper may require them to right-click the app and choose `Open` the first time.
+
+## Share Copy
+
+Short version:
+
+> AI Eye Guardian is a tiny macOS eye-break companion for AI workers: a green ant runs across your desktop while a colorful rooster chases it, giving your eyes a moving target during long screen sessions.
+
+Show HN / developer version:
+
+> Show HN: AI Eye Guardian, a playful macOS eye-break companion for people who stare at screens all day.
 
 ## License
 
