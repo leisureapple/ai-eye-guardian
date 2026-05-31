@@ -144,4 +144,4 @@ Show HN / developer version:
 
 ## License
 
-No open-source license has been selected yet. Before making the repository public or accepting outside reuse, add the license you want and confirm that the rooster video/frame assets are allowed to be redistributed.
+MIT License. See [LICENSE](LICENSE).
